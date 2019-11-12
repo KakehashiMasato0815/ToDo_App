@@ -39,7 +39,7 @@
     <header class="header">
         <nav class="nav">
             <ul class="header_menu">
-                <li class="nav-link">{{ Auth::user()->name() }}さん</li>
+                <li class="nav-link">{{ Auth::user()->name }}さん</li>
                 <li class="header_menu_title">
                     <a class="nav-link listNew" href="/">kanban</a>
                 </li>
