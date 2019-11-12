@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Auth;
 use App\Card;
 use App\Listing;
+use Validator;
 use Illuminate\Http\Request;
 
 class CardsController extends Controller
@@ -32,7 +33,7 @@ class CardsController extends Controller
         }
         
         $cards = new Card();
-        $cards->title = $request->card_ttle;
+        $cards->title = $request->card_title;
         $cards->listing_id = $request->listing_id;
         $cards->memo = $request->card_memo;
         
