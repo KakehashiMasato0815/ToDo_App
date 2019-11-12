@@ -12,4 +12,9 @@ class Listing extends Model
         'created_at',
         'updated_at'
     ];
+    
+    public function cards()
+    {
+        return $this->hasMany('App\Card');
+    }
 }
