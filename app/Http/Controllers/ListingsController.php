@@ -62,7 +62,7 @@ class ListingsController extends Controller
             'list_name' => 'required|max:255',
         ]);
         
-        if ($validator->failse())
+        if ($validator->fails())
         {
             return redirect()->back()->withErrors($validator->errors())->withInput();
         }

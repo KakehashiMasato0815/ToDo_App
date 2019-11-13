@@ -14,7 +14,7 @@
 Route::get('/', 'ListingsController@index');
 Route::get('/new', 'ListingsController@new')->name('new');
 Route::post('/listings', 'ListingsController@store');
-Route::get('/listings/{listing_id}', 'ListingsController@edit');
+Route::get('/listingsEdit/{listing_id}', 'ListingsController@edit');
 Route::post('/listings/edit', 'ListingsController@update');
 Route::get('/listingsDelete/{listing_id}', 'ListingsController@destroy');
 
